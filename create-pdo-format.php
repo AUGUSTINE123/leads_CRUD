@@ -29,13 +29,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $lastname = $input_lastname;
     }
 
-    // Validate address
-    $input_address = trim($_POST["address"]);
-    if(empty($input_address)){
-        $address_err = "Please enter an address.";     
-    } else{
-        $address = $input_address;
-    }
     
     // Validate category
     $input_category = trim($_POST["category"]);
